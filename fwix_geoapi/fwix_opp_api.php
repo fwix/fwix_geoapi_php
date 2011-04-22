@@ -93,7 +93,11 @@ class FwixApi{
         } else{
             $response = $this->fetch_url_without_curl($url);
         }
-        return json_decode($response, true);
+        $decoded_response = json_decode($response, true);
+        if (array_key_exists('type',$decoded_response) && $decoded_response['type'] == 400){
+            throw new Exception($decoded_response['message']);
+        }
+        return $decoded_response;
     }
 
     public function fetch_url_without_curl($url){
