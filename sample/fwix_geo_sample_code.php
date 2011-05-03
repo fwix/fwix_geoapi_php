@@ -6,10 +6,10 @@
 
 	<?php
 	/**
-	 * This file displays sample code that uses all the available API functions in fwix_opp_api.php
+	 * This file displays sample code that uses all the available API functions in fwix_geo_api.php
 	 */
  
-	require_once 'fwix_opp_api.php';
+	require_once '../fwix_geoapi/fwix_geo_api.php';
 	
 	class GeoApiTest{
 	

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'fwix_opp_api.php';
+require_once '../fwix_geoapi/fwix_geo_api.php';
 
 /** These tests could use some love, they aren't exactly complete **/
 
